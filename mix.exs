@@ -4,10 +4,29 @@ defmodule EctoApnsToken.Mixfile do
   def project do
     [app: :ecto_apns_token,
      version: "0.1.0",
+     description: description(),
+     package: package(),
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
+  end
+
+  defp description do
+    """
+    An Ecto type for storing, validating and generating Apple APNS Tokens
+    """
+  end
+
+  defp package do
+    [
+      files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["Ben Church"],
+      licenses: ["MIT"],
+      links: %{
+        "GitHub" => "https://github.com/bechurch/ecto_apns_token",
+        "Docs" => "https://hexdocs.pm/ecto_apns_token/"}
+    ]
   end
 
   # Configuration for the OTP application

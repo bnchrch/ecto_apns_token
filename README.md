@@ -1,6 +1,6 @@
 # EctoApnsToken
 
-**TODO: Add description**
+An Ecto type for storing, validating and generating Apple APNS Tokens
 
 ## Installation
 
